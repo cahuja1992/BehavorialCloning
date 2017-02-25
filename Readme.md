@@ -52,7 +52,8 @@ Apart from  inputing the original images we ,prefered to input the processsed im
 * Flatten Array
 
 
-	
+`	
+    
     def read_image(image_path,dim):
         img = cv2.imread(data_dir+"/"+image_path.strip())
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -62,7 +63,7 @@ Apart from  inputing the original images we ,prefered to input the processsed im
         flatten_image = norm_image.flatten().tolist()
 
         return norm_image.astype(np.float32)
-
+`
 
 ### Training the model
 
